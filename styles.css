@@ -602,11 +602,20 @@ body {
   }
 
   .skills-icons {
-    gap: 1rem;
+    gap: 0.6rem;
+  }
+
+  .skill-icon {
+    padding: 0.35rem 0.65rem;
+    gap: 0.4rem;
   }
 
   .skill-icon i {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  
+  .skill-name {
+    font-size: 0.85rem;
   }
 
   .section-title {
@@ -615,6 +624,14 @@ body {
 
   .social-buttons {
     gap: 0.6rem;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  /* Hide decorative lines on mobile */
+  .social-buttons::before,
+  .social-buttons::after {
+    display: none;
   }
 
   .social-button {
