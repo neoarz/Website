@@ -589,12 +589,21 @@ body {
 
 @media (max-width: 480px) {
   .main-content {
-    padding: 1rem 0.5rem;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 
   .content-box {
-    border-radius: 6px;
+    border-radius: 0;
     padding: 1.5rem 1rem;
+    border: none;
+    box-shadow: none;
+    background-color: var(--primary);
   }
 
   .name {

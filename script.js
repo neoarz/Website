@@ -3,6 +3,12 @@ window.onload = function () {
     window.scrollTo(0, 0);
   }, 10);
 
+  // Check if we're on mobile and adjust container opacity
+  const isMobile = window.innerWidth <= 480;
+  if (isMobile) {
+    document.querySelector('.container').style.opacity = '1';
+  }
+
   const projectLinks = {
     Sidestore: "https://github.com/SideStore/SideStore",
     Countdown: "https://github.com/neoarz/Countdown-App",
